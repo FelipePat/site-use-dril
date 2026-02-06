@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+
+:root {
+    --preto: #000000;
+    --branco: #ffffff;
+    --cinza: #e5e5e5;
+    --verde: #4b5320;
+
+}
+
+body {
+    background-color: var(--branco);
+    color: var(--preto);
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+
+}
+
+header {
+  
+    position: sticky; 
+    top: 0;
+    z-index: 999; 
+    background-color: var(--branco); 
+    
+    /* Layout */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 3px solid var(--preto);
+}
+
+header h1:hover {
+    /* Simula uma falha ou um carimbo sendo pressionado */
+    opacity: 0.7;
+    letter-spacing: 2px;
+    transition: 0.1s;
+}
+nav a {
+    text-decoration: none;
+    color: var(--preto);
+    margin-left: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 20px;
+    padding: 5px 10px;
+    transition: background 0.1s; /* Transição curta para ser seco */
+}
+
+nav a:hover {
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+#hero{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cinza);
+    border-bottom: 3px; solid var(--preto);
+}
+
+#hero img {
+    width: 120px;
+    margin-bottom: 20px;
+    filter: contrast(200%) grayscale(100%)
+
+}
+
+#produtos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    border-bottom: 3px solid var(--preto);
+
+}
+
+article {
+    padding: 40px;
+    border: 1px, solid var(--preto);
+    padding: 40px;
+    text-align: center;
+    transition: background 0.3s ease;
+    cursor: crosshair; /* Muda o mouse para uma mira (estética técnica) */
+    transition: all 0.2s;
+}
+    
+
+article img{
+    width: 100%;
+    max-width: 300px;
+    filter: grayscale(100%)
+    margin-bottom: 20px;
+}
+
+article h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+article:hover {
+    border: 1px solid var(--preto);
+    background-color: var(--cinza-urbano);
+}
+
+article:hover img {
+    filter: grayscale(0%); /* A cor só aparece (se houver) no hover */
+    transform: scale(1.02); /* Um zoom quase imperceptível */
+}
+article span {
+    padding: 60px 40px;
+    background: var(--preto);
+    color: var(--branco);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+
+
+}
+
